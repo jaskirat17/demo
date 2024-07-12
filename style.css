@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.sunrise {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+}
+
+.sun {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    margin-left: -40px;
+    background: radial-gradient(circle, #ffdd00, #fbb034);
+    border-radius: 50%;
+    animation: sunrise 3s infinite alternate;
+}
+
+@keyframes sunrise {
+    0% {
+        bottom: 0;
+        opacity: 0.5;
+    }
+    100% {
+        bottom: 20px;
+        opacity: 1;
+    }
+}
+
+.greeting {
+    font-size: 3em;
+    color: #333;
+    margin: 0;
+    font-family: 'Great Vibes', cursive;
+}
+
+.message {
+    font-size: 1.2em;
+    color: #666;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+}
